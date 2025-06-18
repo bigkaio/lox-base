@@ -43,7 +43,7 @@ block      : "{" declaration* "}"
 
 ?expr      : assignment
 
-var_dec    : "var" VAR ("=" expr)? [";"]
+var_dec    : "var" VAR ("=" expr)? ";"
 
 ?assignment: attr "=" assignment   -> setattr
            | VAR "=" assignment    -> assign
